@@ -53,7 +53,6 @@ class _AddProductState extends State<AddProduct> {
                     mydb.db.rawInsert(
                         "INSERT INTO products (pro_no, name, description) VALUES (?, ?, ?);",
                         [pro_no.text, name.text, description.text]);
-
                     ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(content: Text("New Product Added")));
 

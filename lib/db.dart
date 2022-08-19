@@ -1,3 +1,4 @@
+import 'package:equations/equations.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
@@ -5,6 +6,8 @@ class MyDb {
   late Database db;
 
   Future open() async {
+    // solution(0, 10, 30);
+
     // Get a location using getDatabasesPath
     var databasesPath = await getDatabasesPath();
     String path = join(databasesPath, 'demo1.db');
